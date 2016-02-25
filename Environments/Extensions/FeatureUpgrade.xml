@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SPSD Version="5.0.4.6440">
+  <Extensions>
+    <Extension ID="FeatureUpgradeInstance1" Type="FeatureUpgrade">
+		<Events>
+			<Event Name="AfterUpdate">Execute-FeatureUpgradeExtension</Event>
+		</Events>
+        <Parameters>
+          <Parameter Name="WebAppUrl">$(WebAppUrl)</Parameter>
+        </Parameters> 
+		<Data>
+			<Features>
+				<!--<Feature Name="Feature_Name" />-->
+			</Features>
+		</Data>
+    </Extension>
+  </Extensions>
+</SPSD>
